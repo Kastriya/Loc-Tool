@@ -1,0 +1,67 @@
+body {
+  background: linear-gradient(to bottom right, #8b5cf6, #ec4899, #ef4444);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#permission-screen, #chat-screen {
+  max-width: 400px;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+}
+
+button {
+  background: white;
+  color: #8b5cf6;
+  padding: 0.5rem 1.25rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #f3e8ff;
+}
+
+input {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  border: none;
+  background: rgba(255, 255, 255, 0.8);
+  color: black;
+}
+
+#chat-box {
+  overflow-y: auto;
+  flex-grow: 1;
+  margin-bottom: 1rem;
+  max-height: 50vh;
+}
+
+#chat-box div {
+  padding: 0.5rem;
+  margin-bottom: 0.25rem;
+}
